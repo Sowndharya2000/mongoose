@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+  
+</head>
+<body>
+<style>
+body{
+    background-color:#222128;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    padding:10px;
+    max-width:500px ;
+    margin:100px auto;
+    background-color: #333;
+    color:#fff;
+    border-radius:10px ;
+    box-shadow:0 0 5px #fff ;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    padding:15px;
+   
+}
+form label{
+    font-size:25px ;
+    margin-bottom:10px ;
+}
+form input{
+    padding:8px;
+    border-radius:10px ;
+    border:none;
+    outline: none;
+
+}
+form select{
+    padding:8px;
+}
+form button{
+    padding:8px;
+   background-color:#348adb ;
+   border:none;
+   border-radius:10px ;
+   margin-top:14px ;
+   font-size:25px ;
+   color:#fff;
+
+}
+
+</style>
+   <div class="container">
+    <form action="/empdata"method="POST">
+   
+        <label for="regd_no">Registration number :</label>
+        <input type="text"id="regd_no"name="regd_no">
+        <label for="name">Name :</label>
+        <input type="text"id="name"name="name">
+        <label for="email">Email :</label>
+        <input type="email"name="email">
+        <label for="branch">Branch :</label>
+        <select name="branch" name="branch"id="branch">
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MEOH">MEOH</option>
+            <option value="CIVIL">CIVIL</option>
+        </select>
+<button type="Submit">Submit</button>
+    </form>
+   </div>
+</body>
+</html>
+
+
